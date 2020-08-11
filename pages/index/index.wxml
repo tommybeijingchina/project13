@@ -1,0 +1,53 @@
+<!--index.wxml-->
+
+
+
+<view class="body">
+	<view class="header">
+		<button bindtap="onFree" size="mini" type="primary" class="flag1">免费</button>
+		<button bindtap="onCost" size="mini"  >付费</button>
+
+
+	</view>
+	
+	<view class="shell">
+		<scroll-view scroll-y="true" class="scrollview">
+			<view class="core">
+				<view wx:for="{{list}}" class="course_card">
+					<view>
+						<image mode="widthFix" src="{{item.coverPath}}"> </image>
+					</view>
+					<view class="xctg">{{item.nameTommy}}</view>
+					<view wx:if="{{item.priceOne>0}}" class="price">{{item.priceOne}}</view>
+					<view wx:else class="price">免费</view>
+				</view>
+
+
+			</view>
+		</scroll-view>
+	</view>
+
+	<view class="guide">
+
+		<view class="guide-item">
+			<image mode="widthFix" src="../imageset/floder.png"></image>
+			<view>信息</view>
+		</view>
+
+		<view class="guide-item">
+			<image mode="widthFix" src="../imageset/chat.png"></image>
+			<view>交流</view>
+		</view>
+
+		<view class="guide-item">
+			<image mode="widthFix" src="../imageset/meeting.png"></image>
+			<view>会议</view>
+		</view>
+
+		<view class="guide-item">
+			<image mode="widthFix" src="../imageset/orderin.png"></image>
+			<view>购买</view>
+		</view>
+
+	</view>
+</view>
