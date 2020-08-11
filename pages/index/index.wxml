@@ -1,13 +1,11 @@
-<!--index.wxml-->
+<!--index.wxml 尝试版本管理-->
 
 
 
 <view class="body">
 	<view class="header">
-		<button bindtap="onFree" size="mini" type="primary" class="flag1">免费</button>
+		<button bindtap="onFree" size="mini" type="primary" class="flag1">免费啊</button>
 		<button bindtap="onCost" size="mini"  >付费</button>
-
-
 	</view>
 	
 	<view class="shell">
@@ -19,7 +17,7 @@
 					</view>
 					<view class="xctg">{{item.nameTommy}}</view>
 					<view wx:if="{{item.priceOne>0}}" class="price">{{item.priceOne}}</view>
-					<view wx:else class="price">免费</view>
+					<view wx:else class="price">免费啊</view>
 				</view>
 
 
